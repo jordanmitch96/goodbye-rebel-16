@@ -1,0 +1,66 @@
+/* /////////////////////// */
+/* /////// Resets //////// */
+/* /////////////////////// */
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(teal_flamingos_pool.jpg);
+  width: 100%;
+  background: #950740;
+  color: #cdcdcd;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.grid-container {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr, 1fr, 1fr, 1fr, 1fr;
+
+  grid-template-areas:
+    "header header header"
+    "content content content"
+    "footer footer footer";
+}
+
+.grid-container div {
+  background: #1a1a1d;
+  color: #eee;
+  font-size: 1.4em;
+  font-weight: 900;
+  padding: 20px;
+}
+
+.grid-container div.header {
+  height: 100px;
+}
+
+.item-1 {
+  grid-area: header;
+}
+
+.item-10 {
+  grid-area: content;
+}
+
+.item-11 {
+  grid-area: footer;
+}
