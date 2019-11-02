@@ -1,0 +1,58 @@
+/* /////////////////////// */
+/* /////// Resets //////// */
+/* /////////////////////// */
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+body {
+    color: #cdcdcd;
+  font-family: "Fira Sans", sans-serif;
+  background-image: url("../img/diamonds_background.jpg")
+  
+  
+}
+
+.container {
+  width: 100%;
+  height: 500px;
+  background-color: #4e4e50;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: space-between;
+}
+
+
+.header {
+    background-color: #1a1a1d;
+    flex-basis: 100%;
+}
+.about {
+    justify-content: center;
+  align-self: center;
+  background-color: rgba(149,7,64,0.5); 
+  flex-basis: 100%;
+}
+
+.music {
+  /* flex-basis: 0 1 100px; */
+  flex-basis: 100%;
+  background: 
+}
