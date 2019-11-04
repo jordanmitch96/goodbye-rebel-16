@@ -23,9 +23,9 @@ a {
 body {
   margin: 0;
   padding: 0;
-  background-image: url(img/teal_flamingos_pool.jpg);
   width: 100%;
-  background: #950740;
+  /* background: #950740; */
+  background-image: url("../img/connect_background.jpg");
   color: #cdcdcd;
   font-family: "Fira Sans", sans-serif;
 }
@@ -42,8 +42,12 @@ body {
     "footer footer footer";
 }
 
+.content > img {
+  object-fit: cover;
+  width: 100%;
+}
 .grid-container div {
-  background: #1a1a1d;
+  background: rgba(26, 26, 29, 0.8);
   color: #eee;
   font-size: 1.4em;
   font-weight: 900;
