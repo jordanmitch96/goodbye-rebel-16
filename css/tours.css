@@ -17,7 +17,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: #333;
+  color: #1a1a1d;
 }
 
 a:hover {
@@ -28,14 +28,9 @@ body {
   color: #cdcdcd;
   font-family: "Fira Sans", sans-serif;
   background-image: url("../img/teal_background_strokes.jpg");
-  background-size: auto;
+  background-size: cover;
 }
 
-.logo-header {
-  max-width: 60%;
-  float: right;
-  margin-right: 20px;
-}
 /* /////////////////////////////////////////////////////////////////
   /////////////////////////////////////////////////////////////////
   /////////////////////////// MENU ////////////////////////////////
@@ -162,7 +157,28 @@ div.item {
     "footer";
 }
 
-@media screen and (min-width: 660px) {
+.item-1,
+div.logo-header {
+  grid-area: header;
+  grid-column-end: span;
+  -ms-grid-column-align: end;
+}
+
+.item-4 {
+  grid-area: footer;
+  grid-auto-columns: auto;
+  grid-column: span;
+  align-items: stretch;
+}
+
+.footer-icons,
+a {
+  grid-area: footer;
+  align-items: stretch;
+  /* color: #cdcdcd; */
+}
+
+@media screen and (min-width: 760px) {
   .grid-container {
     grid-template-areas:
       "header header header"
@@ -171,6 +187,7 @@ div.item {
   }
   .item-1 {
     grid-area: header;
+    justify-content: right;
   }
   .item-2 {
     grid-area: main;
@@ -181,8 +198,23 @@ div.item {
 
   .item-4 {
     grid-area: footer;
-    grid-auto-flow: column;
+    justify-items: center;
   }
+
+  .footer-icons {
+    grid-area: footer;
+    justify-items: center;
+  }
+
+  /* .item-5 {
+    grid-area: footer;
+    justify-self: center;
+  }
+
+  .item-6 {
+    grid-area: footer;
+    justify-self: end;
+  } */
 }
 @media screen and (min-width: 900px) {
   .grid-container {
