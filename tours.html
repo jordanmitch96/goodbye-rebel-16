@@ -16,63 +16,85 @@
     <title>Tours | Goodbye Rebel 16</title>
   </head>
   <body>
-    <!-- <div class="logo-header">
-      <img
-        src="img/gbr16_white_logo_small.png"
-        alt="Goodbye Rebel 16 Logo White"
-      />
-    </div> -->
-    <nav role="navigation">
-      <div id="menuToggle">
-        <input type="checkbox" />
-        <span></span>
-        <span></span>
-        <span></span>
-        <ul id="menu">
-          <a href="index.html"><li>Home</li></a>
-          <a href="about.html"><li>About</li></a>
-          <a href="merch.html"><li>Merch</li></a>
-          <a href="#"><li>Tours</li></a>
-          <a href="contact.html"><li>Contact</li></a>
+    <nav id="page-nav">
+      <label for="hamburger"><i class="fas fa-bars"></i></label>
+      <input type="checkbox" id="hamburger" />
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="merch.html">Merch</a></li>
+        <li><a href="#">Tours</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <main class="grid-container">
+      <div class="item header item-1">
+        <div class="logo-header">
+          <a href="index.html"
+            ><img
+              src="img/gbr16_white_logo_small.png"
+              alt="Goodbye Rebel 16 Logo White"
+          /></a>
+        </div>
+      </div>
+      <div class="item item-2">
+        <h2>European Tour Dates</h2>
+        <ul>
+          <li>MADRID | December 10</li>
+          <br />
+          <li>London | January 1</li>
+          <br />
+          <li>BERLIN | January 3</li>
+          <br />
+          <li>ROME | January 12</li>
+          <br />
+          <li>ATHENS | January 23</li>
+          <br />
+          <li>MUNICH | February 3</li>
+          <br />
+          <li>PARIS | February 7</li>
+          <br />
+          <li>AMSTERDAM | February 11</li>
+          <br />
+          <li>BARCELONA | February 15</li>
+          <br />
+          <li>PRAGUE | February 26</li>
         </ul>
       </div>
-    </nav>
-    <body>
-        <main class="grid-container">
-            <div class="item header item-1">
-               <div class="logo-header"> <a href="index.html"><img
-                  src="img/gbr16_white_logo_small.png"
-                  alt="Goodbye Rebel 16 Logo White"
-                /></a> </div>
-            </div>
-            <div class="item item-2"><h2>European Tour Dates</h2>
-            <ul><li>MADRID | December 10</li><br>
-                <li>London | January 1</li><br>
-                <li>BERLIN | January 3</li><br>
-                <li>ROME | January 12</li><br>
-                <li>ATHENS | January 23</li><br>
-                <li>MUNICH | February 3</li><br>
-                <li>PARIS | February 7</li><br>
-                <li>AMSTERDAM | February 11</li><br>
-                <li>BARCELONA | February 15</li><br>
-                <li>PRAGUE | February 26</li></ul></div>
-            <div class="item item-3"><h3>We'll see you on tour!</h3><p> Join Goodbye Rebel 16 on our second tour of Europe beginning December 10. Tickets on sale now!</p><br>
-                <h3>New Merch in Stock</h3><p>Get official Goodbye Rebel 16 merchandise including t-shirts, sweatshirts, hats, music, and more. </p>
-                <a href="merch.html"><img
-                src="img/gbr16_teal_cap.png"
-                alt="Goodbye Rebel 16 Merch"
-              /> </a> </div>
-            <div class="item item-4">
-              <div class= "footer-icons"><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
-        </p>
-     <p>
-        <a href="https://www.gmail.com"> <i class="far fa-envelope"></i></a>
-        </p>
-       
+      <div class="item item-3">
+        <h3>We'll see you on tour!</h3>
         <p>
-          <a href="https://www.spotify.com"> <i class="fas fa-music"></i> </a>
-        </div></div>
-           
-        </main>
-    </body>
-    </html>
+          Join Goodbye Rebel 16 on our second tour of Europe beginning December
+          10. Tickets on sale now!
+        </p>
+        <br />
+        <h3>New Merch in Stock</h3>
+        <p>
+          Get official Goodbye Rebel 16 merchandise including t-shirts,
+          sweatshirts, hats, music, and more.
+        </p>
+        <a href="merch.html"
+          ><img
+            class="image"
+            src="img/gbr16_teal_cap.png"
+            alt="Goodbye Rebel 16 Merch"
+          />
+        </a>
+      </div>
+
+      <div class="item footer-icons item-4">
+        <a href="https://www.instagram.com">
+          <i class="fab fa-instagram"></i>
+        </a>
+
+        <a href="https://www.gmail.com">
+          <i class="far fa-envelope"></i>
+        </a>
+
+        <a href="https://www.spotify.com">
+          <i class="fas fa-music"></i>
+        </a>
+      </div>
+    </main>
+  </body>
+</html>
