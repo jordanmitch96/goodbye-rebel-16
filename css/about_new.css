@@ -12,6 +12,15 @@ html {
 }
 a {
   text-decoration: none;
+  color: #c5c6c7;
+}
+
+a:visited {
+  color: #66fcf1;
+}
+
+a:hover {
+  color: #c3073f;
 }
 
 #wrapper {
@@ -35,8 +44,8 @@ a {
 
 .main-content {
   grid-area: main;
-  background: linear-gradient(326deg, #950740 0%, rgba(111, 34, 50, 0.8) 74%),
-    url("../img/red_background_strokes.jpg") center no-repeat;
+  background: linear-gradient(326deg, #4e4e50 0%, rgba(26, 26, 29, 0.8) 74%),
+    url("../img/teal_background_strokes.jpg") center no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -59,22 +68,33 @@ a {
   margin-bottom: 2rem;
 }
 
-.main-content-shop {
+.main-content-about {
   margin-top: 120px;
   margin-left: 30px;
   display: flex;
   color: #c5c6c7;
-  width: 100%;
+  width: auto;
   flex-flow: wrap;
 }
 
-.shop-content {
+.about-content {
   justify-content: center;
   align-items: center;
   flex-flow: wrap;
-  width: auto;
+  width: 100%;
   margin-bottom: 20px;
-  font-size: 1.2em;
+  font-size: 1.5rem;
+  color: #c5c6c7;
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.connect-icons {
+  font-size: 3rem;
+  align-items: center;
 }
 
 .btn-group {
@@ -93,13 +113,13 @@ a {
 }
 
 .main-content-cta .date {
-  color: #66fcf1;
+  color: #c3073f;
   font-size: 2rem;
 }
 
 .footer {
   grid-area: footer;
-  background-image: linear-gradient(315deg, #66fcf1 0%, #45a29e 75%);
+  background-image: linear-gradient(315deg, #950740 0%, #c3073f 75%);
   height: 100%;
   display: flex;
   align-items: center;
@@ -154,14 +174,14 @@ nav {
   bottom: -2.2rem;
   width: 100%;
   height: 3px;
-  background-image: linear-gradient(315deg, #45a29e 0%, #66fcf1 75%);
+  background-image: linear-gradient(315deg, #4e4e50 0%, #4e4e50 75%);
 }
 
 .statistics {
   width: 100%;
   display: flex;
   /* justify-content: space-between;
-      padding: 0 5rem; */
+        padding: 0 5rem; */
 }
 
 .statistics .item {
